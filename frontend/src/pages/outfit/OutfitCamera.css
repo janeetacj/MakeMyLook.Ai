@@ -1,0 +1,651 @@
+.outfit-camera-page {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 90% 0%,
+      rgba(180, 122, 255, 0.13),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 0% 65%,
+      rgba(255, 159, 188, 0.13),
+      transparent 30%
+    ),
+    #fff9fc;
+}
+
+.outfit-camera-container {
+  width: 100%;
+  max-width: 700px;
+
+  min-height: 100vh;
+
+  margin: 0 auto;
+
+  padding: 22px 24px 40px;
+}
+
+
+/* HEADER */
+
+.camera-header {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.camera-back-button {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-text);
+
+  background: white;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 12px;
+}
+
+.camera-progress {
+  flex: 1;
+
+  display: flex;
+
+  gap: 5px;
+}
+
+.camera-progress span {
+  height: 5px;
+
+  flex: 1;
+
+  background: #e9e2eb;
+
+  border-radius: 999px;
+}
+
+.camera-progress span.completed {
+  background: #dcb3f6;
+}
+
+.camera-progress span.active {
+  background: var(--gradient-primary);
+}
+
+.camera-step {
+  color: var(--color-text-secondary);
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+
+/* TITLE */
+
+.camera-title {
+  margin-top: 25px;
+
+  text-align: center;
+}
+
+.camera-title-icon {
+  width: 40px;
+  height: 40px;
+
+  margin: 0 auto 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  background: var(--gradient-primary);
+
+  border-radius: 13px;
+}
+
+.camera-title > p:first-of-type {
+  color: var(--color-text-secondary);
+
+  font-size: 7px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.camera-title h1 {
+  margin-top: 7px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 34px;
+
+  line-height: 1.05;
+}
+
+.camera-title h1 span {
+  display: block;
+
+  background: var(--gradient-primary);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+.camera-subtitle {
+  max-width: 420px;
+
+  margin: 10px auto 0;
+
+  color: var(--color-text-secondary);
+
+  font-size: 9px;
+
+  line-height: 1.55;
+}
+
+
+/* CAMERA FRAME */
+
+.camera-frame-wrapper {
+  margin-top: 22px;
+
+  padding: 8px;
+
+  background: white;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 25px;
+
+  box-shadow: var(--shadow-card);
+}
+
+.camera-frame {
+  position: relative;
+
+  min-height: 440px;
+
+  overflow: hidden;
+
+  background: #17131c;
+
+  border-radius: 19px;
+}
+
+.camera-video,
+.captured-outfit-photo {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.camera-video {
+  transform: scaleX(-1);
+}
+
+.captured-outfit-photo {
+  transform: none;
+}
+
+
+/* GUIDE */
+
+.camera-guide {
+  position: absolute;
+
+  inset: 0;
+
+  pointer-events: none;
+}
+
+.guide-corner {
+  position: absolute;
+
+  width: 43px;
+  height: 43px;
+
+  border-color: rgba(255,255,255,0.95);
+
+  border-style: solid;
+}
+
+.guide-corner.top-left {
+  top: 28px;
+  left: 28px;
+
+  border-width: 3px 0 0 3px;
+
+  border-radius: 12px 0 0 0;
+}
+
+.guide-corner.top-right {
+  top: 28px;
+  right: 28px;
+
+  border-width: 3px 3px 0 0;
+
+  border-radius: 0 12px 0 0;
+}
+
+.guide-corner.bottom-left {
+  bottom: 28px;
+  left: 28px;
+
+  border-width: 0 0 3px 3px;
+
+  border-radius: 0 0 0 12px;
+}
+
+.guide-corner.bottom-right {
+  right: 28px;
+  bottom: 28px;
+
+  border-width: 0 3px 3px 0;
+
+  border-radius: 0 0 12px 0;
+}
+
+
+/* PERSON GUIDE */
+
+.person-outline {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 190px;
+  height: 340px;
+
+  transform: translate(-50%, -50%);
+
+  opacity: 0.7;
+}
+
+.outline-head {
+  width: 70px;
+  height: 82px;
+
+  margin: 0 auto;
+
+  border: 1px solid rgba(255,255,255,0.65);
+
+  border-radius: 50%;
+}
+
+.outline-body {
+  width: 140px;
+  height: 220px;
+
+  margin: 5px auto 0;
+
+  border: 1px solid rgba(255,255,255,0.65);
+
+  border-radius: 65px 65px 35px 35px;
+}
+
+.camera-guide-text {
+  position: absolute;
+
+  left: 50%;
+  bottom: 45px;
+
+  transform: translateX(-50%);
+
+  padding: 8px 13px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  white-space: nowrap;
+
+  color: white;
+
+  background: rgba(15,12,19,0.5);
+
+  border: 1px solid rgba(255,255,255,0.16);
+
+  border-radius: 999px;
+
+  backdrop-filter: blur(10px);
+}
+
+.camera-guide-text strong {
+  font-size: 9px;
+}
+
+.camera-guide-text span {
+  margin-top: 2px;
+
+  color: rgba(255,255,255,0.72);
+
+  font-size: 7px;
+}
+
+
+/* LOADING */
+
+.camera-status {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  color: white;
+
+  background: rgba(15,12,19,0.75);
+
+  font-size: 9px;
+}
+
+.camera-loader {
+  width: 28px;
+  height: 28px;
+
+  border: 2px solid rgba(255,255,255,0.25);
+
+  border-top-color: white;
+
+  border-radius: 50%;
+
+  animation: camera-spin 0.8s linear infinite;
+}
+
+@keyframes camera-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* ERROR */
+
+.camera-error {
+  position: absolute;
+
+  inset: 0;
+
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  color: white;
+
+  background: #211b27;
+}
+
+.camera-error svg {
+  margin-bottom: 12px;
+}
+
+.camera-error strong {
+  font-size: 14px;
+}
+
+.camera-error p {
+  max-width: 300px;
+
+  margin-top: 8px;
+
+  color: rgba(255,255,255,0.65);
+
+  font-size: 9px;
+
+  line-height: 1.6;
+}
+
+.camera-error button {
+  margin-top: 15px;
+
+  padding: 9px 17px;
+
+  color: #261d2b;
+
+  background: white;
+
+  border-radius: 999px;
+
+  font-size: 8px;
+  font-weight: 700;
+}
+
+
+/* CONTROLS */
+
+.camera-controls {
+  margin-top: 18px;
+
+  display: grid;
+
+  grid-template-columns: 1fr auto 1fr;
+
+  align-items: center;
+}
+
+.flip-camera-button {
+  width: 43px;
+  height: 43px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-text);
+
+  background: white;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 50%;
+}
+
+.flip-camera-button:disabled {
+  opacity: 0.4;
+}
+
+.capture-button {
+  width: 76px;
+  height: 76px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: white;
+
+  border: 5px solid #eed9f5;
+
+  border-radius: 50%;
+
+  box-shadow:
+    0 7px 22px rgba(100,70,110,0.15);
+}
+
+.capture-button span {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  background: var(--gradient-primary);
+
+  border-radius: 50%;
+}
+
+.capture-button:disabled {
+  opacity: 0.4;
+}
+
+
+/* CAPTURED CONTROLS */
+
+.captured-controls {
+  margin-top: 18px;
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 10px;
+}
+
+.retake-button,
+.use-photo-button {
+  min-height: 46px;
+
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  border-radius: 999px;
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.retake-button {
+  color: var(--color-text);
+
+  background: white;
+
+  border: 1px solid var(--color-border);
+}
+
+.use-photo-button {
+  color: white;
+
+  background: var(--gradient-primary);
+
+  box-shadow:
+    0 8px 20px rgba(180,122,255,0.18);
+}
+
+
+/* TIPS */
+
+.camera-tips {
+  max-width: 470px;
+
+  margin: 18px auto 0;
+
+  padding: 12px;
+
+  display: flex;
+
+  gap: 9px;
+
+  background: white;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 15px;
+}
+
+.tip-icon {
+  width: 30px;
+  height: 30px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-primary-dark);
+
+  background: #f5eafa;
+
+  border-radius: 9px;
+}
+
+.camera-tips strong {
+  display: block;
+
+  font-size: 9px;
+}
+
+.camera-tips p {
+  margin-top: 3px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 7px;
+
+  line-height: 1.5;
+}
+
+.hidden-camera-canvas {
+  display: none;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .outfit-camera-container {
+    padding: 18px;
+  }
+
+  .camera-frame {
+    min-height: 430px;
+  }
+
+  .person-outline {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+}
+
+@media (max-width: 370px) {
+
+  .camera-frame {
+    min-height: 390px;
+  }
+
+  .person-outline {
+    transform: translate(-50%, -50%) scale(0.78);
+  }
+
+  .camera-guide-text {
+    bottom: 35px;
+  }
+}

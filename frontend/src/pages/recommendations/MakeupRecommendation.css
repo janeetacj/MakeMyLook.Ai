@@ -1,0 +1,805 @@
+.makeup-page {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 90% 0%,
+      rgba(173, 128, 218, 0.15),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 0% 55%,
+      rgba(116, 180, 155, 0.10),
+      transparent 32%
+    ),
+    #fff9fc;
+}
+
+.makeup-container {
+  width: 100%;
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  padding: 22px 24px 42px;
+}
+
+
+/* HEADER */
+
+.makeup-header {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+}
+
+.makeup-back-button {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: var(--color-text);
+
+  background: white;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 12px;
+
+  cursor: pointer;
+}
+
+.makeup-header-title {
+  flex: 1;
+}
+
+.makeup-header-title span {
+  display: block;
+
+  color: var(--color-text-secondary);
+
+  font-size: 6px;
+  font-weight: 800;
+
+  letter-spacing: .9px;
+}
+
+.makeup-header-title strong {
+  display: block;
+
+  margin-top: 3px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 15px;
+}
+
+.makeup-header-sparkle {
+  width: 37px;
+  height: 37px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #9165c8;
+
+  background: #f4ecfc;
+
+  border-radius: 11px;
+}
+
+
+/* HERO */
+
+.makeup-hero {
+  margin-top: 28px;
+
+  text-align: center;
+}
+
+.makeup-hero-icon {
+  width: 45px;
+  height: 45px;
+
+  margin: 0 auto 11px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #bf79a0,
+      #9b72dc
+    );
+
+  border-radius: 15px;
+}
+
+.makeup-eyebrow {
+  color: var(--color-text-secondary);
+
+  font-size: 6px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.makeup-hero h1 {
+  margin-top: 7px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 36px;
+
+  line-height: 1.04;
+}
+
+.makeup-hero h1 span {
+  display: block;
+
+  background:
+    linear-gradient(
+      90deg,
+      #c77c9e,
+      #9b72d8
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+.makeup-hero-description {
+  max-width: 450px;
+
+  margin: 10px auto 0;
+
+  color: var(--color-text-secondary);
+
+  font-size: 8px;
+
+  line-height: 1.55;
+}
+
+
+/* PROFILE */
+
+.makeup-profile-card {
+  margin-top: 22px;
+
+  padding: 14px 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  background: white;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 18px;
+
+  box-shadow: var(--shadow-card);
+}
+
+.makeup-profile-item {
+  flex: 1;
+
+  text-align: center;
+}
+
+.makeup-profile-item span {
+  display: block;
+
+  color: var(--color-text-secondary);
+
+  font-size: 5px;
+  font-weight: 800;
+
+  letter-spacing: .7px;
+}
+
+.makeup-profile-item strong {
+  display: block;
+
+  margin-top: 4px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 11px;
+}
+
+.makeup-profile-divider {
+  width: 1px;
+  height: 28px;
+
+  background: #e7e0e7;
+}
+
+
+/* LOOK SUMMARY */
+
+.makeup-look-summary {
+  margin-top: 16px;
+
+  padding: 14px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f3f9f6,
+      #f7f0fb
+    );
+
+  border: 1px solid #e6e4e9;
+
+  border-radius: 17px;
+}
+
+.makeup-look-summary-icon {
+  width: 39px;
+  height: 39px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: #9670c4;
+
+  background: white;
+
+  border-radius: 11px;
+}
+
+.makeup-look-summary > div:nth-child(2) {
+  flex: 1;
+}
+
+.makeup-look-summary > div:nth-child(2) span {
+  color: #92779d;
+
+  font-size: 5px;
+  font-weight: 800;
+
+  letter-spacing: .8px;
+}
+
+.makeup-look-summary h2 {
+  margin-top: 3px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 14px;
+}
+
+.makeup-look-summary p {
+  margin-top: 3px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 6.5px;
+
+  line-height: 1.45;
+}
+
+.makeup-match {
+  min-width: 42px;
+
+  text-align: center;
+}
+
+.makeup-match strong {
+  display: block;
+
+  color: #6e987f;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 19px;
+}
+
+.makeup-match span {
+  color: #779283;
+
+  font-size: 5px;
+  font-weight: 800;
+}
+
+
+/* SECTION */
+
+.makeup-section {
+  margin-top: 24px;
+}
+
+.makeup-section-heading span {
+  color: var(--color-text-secondary);
+
+  font-size: 6px;
+  font-weight: 800;
+
+  letter-spacing: .8px;
+}
+
+.makeup-section-heading h2 {
+  margin-top: 4px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 20px;
+}
+
+
+/* MAKEUP LIST */
+
+.makeup-list {
+  margin-top: 11px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.makeup-card {
+  min-height: 88px;
+
+  padding: 11px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  background: white;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 16px;
+
+  transition: .2s ease;
+}
+
+.makeup-card:hover {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 6px 20px rgba(70, 45, 70, .06);
+}
+
+.makeup-card.featured {
+  border-color: #e6d6e2;
+
+  background:
+    linear-gradient(
+      100deg,
+      #fff,
+      #fff7fb
+    );
+}
+
+.makeup-shade {
+  width: 49px;
+  height: 49px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: white;
+
+  border: 4px solid white;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 3px 10px rgba(50, 30, 40, .13);
+}
+
+.makeup-card-content {
+  flex: 1;
+}
+
+.makeup-card-category {
+  display: block;
+
+  color: var(--color-text-secondary);
+
+  font-size: 5px;
+  font-weight: 800;
+
+  letter-spacing: .8px;
+}
+
+.makeup-card-content h3 {
+  margin-top: 3px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 13px;
+}
+
+.makeup-card-content > strong {
+  display: block;
+
+  margin-top: 2px;
+
+  color: #8f7789;
+
+  font-size: 6px;
+  font-weight: 600;
+}
+
+.makeup-card-content p {
+  margin-top: 3px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 6.5px;
+
+  line-height: 1.45;
+}
+
+.makeup-card-check {
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: #c7759a;
+
+  background: #fff2f7;
+
+  border-radius: 50%;
+}
+
+
+/* SHADE PALETTE */
+
+.shade-palette-section {
+  margin-top: 18px;
+
+  padding: 15px;
+
+  background: white;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 18px;
+}
+
+.shade-palette-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shade-palette-heading span {
+  color: var(--color-text-secondary);
+
+  font-size: 5.5px;
+  font-weight: 800;
+
+  letter-spacing: .8px;
+}
+
+.shade-palette-heading h2 {
+  margin-top: 3px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 16px;
+}
+
+.shade-palette-heading > svg {
+  color: #9d72c8;
+}
+
+.shade-palette {
+  height: 72px;
+
+  margin-top: 11px;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  overflow: hidden;
+
+  border-radius: 13px;
+}
+
+.palette-colour {
+  position: relative;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  padding-bottom: 7px;
+}
+
+.palette-colour span {
+  color: white;
+
+  font-size: 5px;
+  font-weight: 800;
+
+  letter-spacing: .5px;
+
+  text-shadow:
+    0 1px 3px rgba(0, 0, 0, .35);
+}
+
+
+/* LIPSTICK */
+
+.lipstick-focus-card {
+  margin-top: 16px;
+
+  padding: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+
+  background: white;
+
+  border: 1px solid #eadfe6;
+
+  border-radius: 17px;
+
+  box-shadow:
+    0 5px 18px rgba(80, 50, 70, .04);
+}
+
+.lipstick-focus-left {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+}
+
+.lipstick-focus-icon {
+  width: 39px;
+  height: 39px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: #b7688d;
+
+  background: #fff0f5;
+
+  border-radius: 11px;
+}
+
+.lipstick-focus-left span {
+  color: #a07189;
+
+  font-size: 5.5px;
+  font-weight: 800;
+
+  letter-spacing: .8px;
+}
+
+.lipstick-focus-left h3 {
+  margin-top: 3px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 13px;
+}
+
+.lipstick-focus-left p {
+  margin-top: 3px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 6.5px;
+}
+
+.lipstick-focus-shade {
+  text-align: center;
+}
+
+.lipstick-focus-circle {
+  width: 38px;
+  height: 38px;
+
+  margin: 0 auto;
+
+  border: 3px solid white;
+
+  border-radius: 50%;
+
+  box-shadow:
+    0 2px 8px rgba(40, 30, 40, .15);
+}
+
+.lipstick-focus-shade span {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #9b929b;
+
+  font-size: 5px;
+}
+
+
+/* TIP */
+
+.makeup-tip {
+  margin-top: 15px;
+
+  padding: 13px;
+
+  display: flex;
+  align-items: flex-start;
+
+  gap: 9px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff3f7,
+      #f5effc
+    );
+
+  border: 1px solid #eee1ef;
+
+  border-radius: 15px;
+}
+
+.makeup-tip-icon {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: #9a6cb5;
+
+  background: #f3eafa;
+
+  border-radius: 10px;
+}
+
+.makeup-tip span {
+  color: #99748e;
+
+  font-size: 5.5px;
+  font-weight: 800;
+
+  letter-spacing: .8px;
+}
+
+.makeup-tip p {
+  margin-top: 4px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 6.5px;
+
+  line-height: 1.5;
+}
+
+
+/* CTA */
+
+.makeup-complete-button {
+  width: 100%;
+
+  min-height: 54px;
+
+  margin-top: 17px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #c9789b,
+      #a574dd
+    );
+
+  border: none;
+
+  border-radius: 999px;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: .2s ease;
+}
+
+.makeup-complete-button:hover {
+  transform: translateY(-2px);
+}
+
+.makeup-footer {
+  margin-top: 9px;
+
+  color: #aaa3ad;
+
+  text-align: center;
+
+  font-size: 6px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+  .makeup-container {
+    padding: 18px 18px 35px;
+  }
+
+  .makeup-hero h1 {
+    font-size: 33px;
+  }
+
+}
+
+@media (max-width: 450px) {
+
+  .makeup-profile-card {
+    padding: 12px 8px;
+  }
+
+  .makeup-profile-item strong {
+    font-size: 10px;
+  }
+
+  .makeup-match {
+    display: none;
+  }
+
+  .makeup-card-content p {
+    font-size: 6px;
+  }
+
+}

@@ -1,0 +1,874 @@
+.hair-page {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 90% 0%,
+      rgba(173, 128, 218, 0.15),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 0% 55%,
+      rgba(116, 180, 155, 0.10),
+      transparent 32%
+    ),
+    #fff9fc;
+}
+
+.hair-container {
+  width: 100%;
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  padding: 22px 24px 42px;
+}
+
+
+/* HEADER */
+
+.hair-header {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+}
+
+.hair-back-button {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: var(--color-text);
+
+  background: white;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 12px;
+
+  cursor: pointer;
+}
+
+.hair-header-title {
+  flex: 1;
+}
+
+.hair-header-title span {
+  display: block;
+
+  color: var(--color-text-secondary);
+
+  font-size: 6px;
+  font-weight: 800;
+
+  letter-spacing: .9px;
+}
+
+.hair-header-title strong {
+  display: block;
+
+  margin-top: 3px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 15px;
+}
+
+.hair-header-sparkle {
+  width: 37px;
+  height: 37px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #9165c8;
+
+  background: #f4ecfc;
+
+  border-radius: 11px;
+}
+
+
+/* HERO */
+
+.hair-hero {
+  margin-top: 28px;
+
+  text-align: center;
+}
+
+.hair-hero-icon {
+  width: 45px;
+  height: 45px;
+
+  margin: 0 auto 11px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #bf79a0,
+      #9b72dc
+    );
+
+  border-radius: 15px;
+}
+
+.hair-eyebrow {
+  color: var(--color-text-secondary);
+
+  font-size: 6px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.hair-hero h1 {
+  margin-top: 7px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 36px;
+
+  line-height: 1.04;
+}
+
+.hair-hero h1 span {
+  display: block;
+
+  background:
+    linear-gradient(
+      90deg,
+      #c77c9e,
+      #9b72d8
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+.hair-hero-description {
+  max-width: 450px;
+
+  margin: 10px auto 0;
+
+  color: var(--color-text-secondary);
+
+  font-size: 8px;
+
+  line-height: 1.55;
+}
+
+
+/* PROFILE */
+
+.hair-profile-card {
+  margin-top: 22px;
+
+  padding: 14px 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  background: white;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 18px;
+
+  box-shadow: var(--shadow-card);
+}
+
+.hair-profile-item {
+  flex: 1;
+
+  text-align: center;
+}
+
+.hair-profile-item span {
+  display: block;
+
+  color: var(--color-text-secondary);
+
+  font-size: 5px;
+  font-weight: 800;
+
+  letter-spacing: .7px;
+}
+
+.hair-profile-item strong {
+  display: block;
+
+  margin-top: 4px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 11px;
+}
+
+.hair-profile-divider {
+  width: 1px;
+  height: 28px;
+
+  background: #e7e0e7;
+}
+
+
+/* HAIR DETAILS */
+
+.hair-details-card {
+  margin-top: 16px;
+
+  padding: 14px;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 8px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff,
+      #faf5fc
+    );
+
+  border: 1px solid #eadfe6;
+
+  border-radius: 17px;
+}
+
+.hair-detail {
+  padding: 8px 5px;
+
+  text-align: center;
+
+  background: rgba(255, 255, 255, .72);
+
+  border-radius: 11px;
+}
+
+.hair-detail span {
+  display: block;
+
+  color: var(--color-text-secondary);
+
+  font-size: 5px;
+  font-weight: 800;
+
+  letter-spacing: .7px;
+}
+
+.hair-detail strong {
+  display: block;
+
+  margin-top: 4px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 9px;
+}
+
+
+/* LOOK SUMMARY */
+
+.hair-look-summary {
+  margin-top: 16px;
+
+  padding: 14px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f3f9f6,
+      #f7f0fb
+    );
+
+  border: 1px solid #e6e4e9;
+
+  border-radius: 17px;
+}
+
+.hair-look-summary-icon {
+  width: 39px;
+  height: 39px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: #9670c4;
+
+  background: white;
+
+  border-radius: 11px;
+}
+
+.hair-look-summary > div:nth-child(2) {
+  flex: 1;
+}
+
+.hair-look-summary > div:nth-child(2) span {
+  color: #92779d;
+
+  font-size: 5px;
+  font-weight: 800;
+
+  letter-spacing: .8px;
+}
+
+.hair-look-summary h2 {
+  margin-top: 3px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 14px;
+}
+
+.hair-look-summary p {
+  margin-top: 3px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 6.5px;
+
+  line-height: 1.45;
+}
+
+.hair-match {
+  min-width: 42px;
+
+  text-align: center;
+}
+
+.hair-match strong {
+  display: block;
+
+  color: #6e987f;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 19px;
+}
+
+.hair-match span {
+  color: #779283;
+
+  font-size: 5px;
+  font-weight: 800;
+}
+
+
+/* SECTION */
+
+.hair-section {
+  margin-top: 24px;
+}
+
+.hair-section-heading span {
+  color: var(--color-text-secondary);
+
+  font-size: 6px;
+  font-weight: 800;
+
+  letter-spacing: .8px;
+}
+
+.hair-section-heading h2 {
+  margin-top: 4px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 20px;
+}
+
+
+/* HAIR LIST */
+
+.hair-list {
+  margin-top: 11px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.hair-card {
+  min-height: 88px;
+
+  padding: 11px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  background: white;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 16px;
+
+  transition: .2s ease;
+}
+
+.hair-card:hover {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 6px 20px rgba(70, 45, 70, .06);
+}
+
+.hair-card.featured {
+  border-color: #e6d6e2;
+
+  background:
+    linear-gradient(
+      100deg,
+      #fff,
+      #fff7fb
+    );
+}
+
+.hair-card-icon {
+  width: 49px;
+  height: 49px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: #9165c8;
+
+  background: #f4ecfc;
+
+  border: 4px solid white;
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 3px 10px rgba(50, 30, 40, .10);
+}
+
+.hair-card-content {
+  flex: 1;
+}
+
+.hair-card-category {
+  display: block;
+
+  color: var(--color-text-secondary);
+
+  font-size: 5px;
+  font-weight: 800;
+
+  letter-spacing: .8px;
+}
+
+.hair-card-content h3 {
+  margin-top: 3px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 13px;
+}
+
+.hair-card-content > strong {
+  display: block;
+
+  margin-top: 2px;
+
+  color: #8f7789;
+
+  font-size: 6px;
+  font-weight: 600;
+}
+
+.hair-card-content p {
+  margin-top: 3px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 6.5px;
+
+  line-height: 1.45;
+}
+
+.hair-card-check {
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: #9165c8;
+
+  background: #f4ecfc;
+
+  border-radius: 50%;
+}
+
+
+/* STYLE DIRECTION */
+
+.hair-style-section {
+  margin-top: 18px;
+
+  padding: 15px;
+
+  background: white;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 18px;
+}
+
+.hair-style-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hair-style-heading span {
+  color: var(--color-text-secondary);
+
+  font-size: 5.5px;
+  font-weight: 800;
+
+  letter-spacing: .8px;
+}
+
+.hair-style-heading h2 {
+  margin-top: 3px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 16px;
+}
+
+.hair-style-heading > svg {
+  color: #9d72c8;
+}
+
+.hair-style-grid {
+  margin-top: 11px;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 7px;
+}
+
+.hair-style-chip {
+  min-height: 54px;
+
+  padding: 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+
+  text-align: center;
+
+  color: #8f6ba9;
+
+  background:
+    linear-gradient(
+      135deg,
+      #faf3fc,
+      #fff7fa
+    );
+
+  border: 1px solid #eee2ef;
+
+  border-radius: 12px;
+}
+
+.hair-style-chip svg {
+  color: #9d72c8;
+}
+
+.hair-style-chip span {
+  color: #7f7481;
+
+  font-size: 6px;
+  font-weight: 700;
+}
+
+
+/* TOP PICK */
+
+.hair-top-pick-card {
+  margin-top: 16px;
+
+  padding: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+
+  background: white;
+
+  border: 1px solid #eadfe6;
+
+  border-radius: 17px;
+
+  box-shadow:
+    0 5px 18px rgba(80, 50, 70, .04);
+}
+
+.hair-top-pick-left {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+}
+
+.hair-top-pick-icon {
+  width: 39px;
+  height: 39px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: #9165c8;
+
+  background: #f4ecfc;
+
+  border-radius: 11px;
+}
+
+.hair-top-pick-left span {
+  color: #92779d;
+
+  font-size: 5.5px;
+  font-weight: 800;
+
+  letter-spacing: .8px;
+}
+
+.hair-top-pick-left h3 {
+  margin-top: 3px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 13px;
+}
+
+.hair-top-pick-left p {
+  margin-top: 3px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 6.5px;
+}
+
+.hair-top-pick-badge {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: #9165c8;
+
+  background: #f4ecfc;
+
+  border-radius: 50%;
+}
+
+
+/* TIP */
+
+.hair-tip {
+  margin-top: 15px;
+
+  padding: 13px;
+
+  display: flex;
+  align-items: flex-start;
+
+  gap: 9px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff3f7,
+      #f5effc
+    );
+
+  border: 1px solid #eee1ef;
+
+  border-radius: 15px;
+}
+
+.hair-tip-icon {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: #9a6cb5;
+
+  background: #f3eafa;
+
+  border-radius: 10px;
+}
+
+.hair-tip span {
+  color: #99748e;
+
+  font-size: 5.5px;
+  font-weight: 800;
+
+  letter-spacing: .8px;
+}
+
+.hair-tip p {
+  margin-top: 4px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 6.5px;
+
+  line-height: 1.5;
+}
+
+
+/* CTA */
+
+.hair-complete-button {
+  width: 100%;
+
+  min-height: 54px;
+
+  margin-top: 17px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #c9789b,
+      #a574dd
+    );
+
+  border: none;
+
+  border-radius: 999px;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: .2s ease;
+}
+
+.hair-complete-button:hover {
+  transform: translateY(-2px);
+}
+
+.hair-footer {
+  margin-top: 9px;
+
+  color: #aaa3ad;
+
+  text-align: center;
+
+  font-size: 6px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+  .hair-container {
+    padding: 18px 18px 35px;
+  }
+
+  .hair-hero h1 {
+    font-size: 33px;
+  }
+
+  .hair-details-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 450px) {
+
+  .hair-profile-card {
+    padding: 12px 8px;
+  }
+
+  .hair-profile-item strong {
+    font-size: 10px;
+  }
+
+  .hair-match {
+    display: none;
+  }
+
+  .hair-card-content p {
+    font-size: 6px;
+  }
+
+  .hair-style-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

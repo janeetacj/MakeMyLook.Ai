@@ -1,0 +1,603 @@
+.recommendation-profile-page {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 80% 5%,
+      rgba(190, 132, 255, 0.14),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 0% 60%,
+      rgba(255, 159, 190, 0.13),
+      transparent 32%
+    ),
+    #fff9fc;
+}
+
+.recommendation-profile-container {
+  width: 100%;
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  padding: 22px 24px 42px;
+}
+
+
+/* HEADER */
+
+.recommendation-profile-header {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.recommendation-back {
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-text);
+
+  background: white;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 12px;
+}
+
+.recommendation-progress {
+  flex: 1;
+
+  display: flex;
+
+  gap: 5px;
+}
+
+.recommendation-progress span {
+  height: 5px;
+
+  flex: 1;
+
+  background: #e9e2eb;
+
+  border-radius: 999px;
+}
+
+.recommendation-progress span.completed {
+  background: #dcb3f6;
+}
+
+.recommendation-progress span.active {
+  background: var(--gradient-primary);
+}
+
+.recommendation-step {
+  color: var(--color-text-secondary);
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+
+/* HERO */
+
+.recommendation-profile-hero {
+  margin-top: 30px;
+
+  text-align: center;
+}
+
+.recommendation-sparkle {
+  width: 45px;
+  height: 45px;
+
+  margin: 0 auto 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  background: var(--gradient-primary);
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 10px 24px rgba(180,122,255,0.2);
+}
+
+.recommendation-profile-hero > p {
+  color: var(--color-text-secondary);
+
+  font-size: 7px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.recommendation-profile-hero h1 {
+  margin-top: 7px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 38px;
+
+  line-height: 1.03;
+}
+
+.recommendation-profile-hero h1 span {
+  display: block;
+
+  background: var(--gradient-primary);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+.recommendation-hero-description {
+  margin-top: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 7px;
+}
+
+.description-dot {
+  width: 3px;
+  height: 3px;
+
+  background: #c5b6c8;
+
+  border-radius: 50%;
+}
+
+
+/* PROFILE CARD */
+
+.beauty-profile-card {
+  margin-top: 24px;
+
+  padding: 17px;
+
+  background: rgba(255,255,255,0.9);
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 20px;
+
+  box-shadow: var(--shadow-card);
+}
+
+.beauty-profile-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-header-left {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+}
+
+.profile-header-icon {
+  width: 35px;
+  height: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-primary-dark);
+
+  background: #f4eafa;
+
+  border-radius: 10px;
+}
+
+.profile-header-left span {
+  display: block;
+
+  color: var(--color-text-secondary);
+
+  font-size: 6px;
+  font-weight: 800;
+
+  letter-spacing: 0.8px;
+}
+
+.profile-header-left strong {
+  display: block;
+
+  margin-top: 3px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 14px;
+}
+
+.profile-ready {
+  padding: 6px 8px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 4px;
+
+  color: #579d7d;
+
+  background: #edf8f2;
+
+  border-radius: 999px;
+
+  font-size: 7px;
+  font-weight: 700;
+}
+
+
+/* PROFILE VALUES */
+
+.profile-values {
+  margin-top: 15px;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 8px;
+}
+
+.profile-value {
+  padding: 12px 10px;
+
+  background: #fcf8fd;
+
+  border: 1px solid #eee7f0;
+
+  border-radius: 12px;
+}
+
+.profile-value > span {
+  display: block;
+
+  color: var(--color-text-secondary);
+
+  font-size: 6px;
+  font-weight: 800;
+
+  letter-spacing: 0.6px;
+}
+
+.profile-value strong {
+  display: block;
+
+  margin-top: 6px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 14px;
+}
+
+.profile-value small {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #a69ba8;
+
+  font-size: 6px;
+}
+
+
+/* OUTFIT */
+
+.profile-outfit {
+  margin-top: 10px;
+
+  padding: 11px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff8fa,
+      #f8f1fb
+    );
+
+  border: 1px solid #eee2f2;
+
+  border-radius: 13px;
+}
+
+.outfit-mini-icon {
+  width: 31px;
+  height: 31px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-primary-dark);
+
+  background: white;
+
+  border-radius: 9px;
+}
+
+.profile-outfit span {
+  display: block;
+
+  color: var(--color-text-secondary);
+
+  font-size: 6px;
+  font-weight: 800;
+
+  letter-spacing: 0.7px;
+}
+
+.profile-outfit strong {
+  display: block;
+
+  margin-top: 3px;
+
+  font-size: 9px;
+}
+
+
+/* BEAUTY DIRECTION */
+
+.beauty-direction {
+  margin-top: 15px;
+}
+
+.beauty-direction > span {
+  color: var(--color-text-secondary);
+
+  font-size: 6px;
+  font-weight: 800;
+
+  letter-spacing: 0.8px;
+}
+
+.direction-tags {
+  margin-top: 8px;
+
+  display: flex;
+
+  gap: 6px;
+
+  flex-wrap: wrap;
+}
+
+.direction-tags span {
+  padding: 6px 9px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 4px;
+
+  color: var(--color-primary-dark);
+
+  background: #f4eafa;
+
+  border-radius: 999px;
+
+  font-size: 7px;
+  font-weight: 700;
+}
+
+
+/* EXPLANATION */
+
+.recommendation-explanation {
+  margin-top: 14px;
+
+  padding: 15px;
+
+  display: flex;
+
+  gap: 10px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff5f9,
+      #f5edfd
+    );
+
+  border: 1px solid #ebdff0;
+
+  border-radius: 17px;
+}
+
+.explanation-icon {
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  background: var(--gradient-primary);
+
+  border-radius: 10px;
+}
+
+.recommendation-explanation span {
+  color: var(--color-text-secondary);
+
+  font-size: 6px;
+  font-weight: 800;
+
+  letter-spacing: 0.8px;
+}
+
+.recommendation-explanation p {
+  margin-top: 5px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 8px;
+
+  line-height: 1.6;
+}
+
+
+/* FOUNDATION */
+
+.recommendation-foundation {
+  margin-top: 13px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 9px;
+}
+
+.foundation-item {
+  padding: 12px;
+
+  display: flex;
+
+  gap: 8px;
+
+  background: white;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 14px;
+}
+
+.foundation-icon {
+  width: 28px;
+  height: 28px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-primary-dark);
+
+  background: #f5ebfa;
+
+  border-radius: 8px;
+}
+
+.foundation-item strong {
+  display: block;
+
+  font-size: 8px;
+}
+
+.foundation-item span {
+  display: block;
+
+  margin-top: 3px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 6px;
+
+  line-height: 1.4;
+}
+
+
+/* CTA */
+
+.build-look-button {
+  width: 100%;
+
+  min-height: 55px;
+
+  margin-top: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  color: white;
+
+  background: var(--gradient-primary);
+
+  border-radius: 999px;
+
+  box-shadow:
+    0 11px 28px rgba(180,122,255,0.21);
+
+  font-size: 10px;
+  font-weight: 800;
+
+  transition: 0.2s ease;
+}
+
+.build-look-button:hover {
+  transform: translateY(-2px);
+}
+
+.recommendation-footer-note {
+  margin-top: 9px;
+
+  color: #aaa3ad;
+
+  text-align: center;
+
+  font-size: 7px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .recommendation-profile-container {
+    padding: 18px 18px 35px;
+  }
+
+  .recommendation-profile-hero h1 {
+    font-size: 33px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .profile-values {
+    grid-template-columns: 1fr;
+  }
+
+  .recommendation-foundation {
+    grid-template-columns: 1fr;
+  }
+}

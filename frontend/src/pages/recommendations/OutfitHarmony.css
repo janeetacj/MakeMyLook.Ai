@@ -1,0 +1,818 @@
+.outfit-harmony-page {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 90% 0%,
+      rgba(173, 128, 218, 0.15),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 0% 55%,
+      rgba(116, 180, 155, 0.10),
+      transparent 32%
+    ),
+    #fff9fc;
+}
+
+.outfit-harmony-container {
+  width: 100%;
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  padding: 22px 24px 42px;
+}
+
+
+/* HEADER */
+
+.outfit-harmony-header {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+}
+
+.outfit-harmony-back {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: var(--color-text);
+
+  background: white;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 12px;
+
+  cursor: pointer;
+}
+
+.outfit-harmony-header-title {
+  flex: 1;
+}
+
+.outfit-harmony-header-title span {
+  display: block;
+
+  color: var(--color-text-secondary);
+
+  font-size: 6px;
+  font-weight: 800;
+
+  letter-spacing: .9px;
+}
+
+.outfit-harmony-header-title strong {
+  display: block;
+
+  margin-top: 3px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 15px;
+}
+
+.outfit-harmony-header-icon {
+  width: 37px;
+  height: 37px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #9165c8;
+
+  background: #f4ecfc;
+
+  border-radius: 11px;
+}
+
+
+/* HERO */
+
+.outfit-harmony-hero {
+  margin-top: 28px;
+
+  text-align: center;
+}
+
+.outfit-harmony-hero-icon {
+  width: 45px;
+  height: 45px;
+
+  margin: 0 auto 11px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #bf79a0,
+      #9b72dc
+    );
+
+  border-radius: 15px;
+}
+
+.outfit-harmony-hero > p:first-of-type {
+  color: var(--color-text-secondary);
+
+  font-size: 6px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.outfit-harmony-hero h1 {
+  margin-top: 7px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 36px;
+
+  line-height: 1.04;
+}
+
+.outfit-harmony-hero h1 span {
+  display: block;
+
+  background:
+    linear-gradient(
+      90deg,
+      #c77c9e,
+      #9b72d8
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+.outfit-harmony-description {
+  max-width: 440px;
+
+  margin: 10px auto 0;
+
+  color: var(--color-text-secondary);
+
+  font-size: 8px;
+
+  line-height: 1.55;
+}
+
+
+/* ANALYSIS */
+
+.outfit-analysis-card {
+  margin-top: 22px;
+
+  padding: 17px;
+
+  background: white;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 20px;
+
+  box-shadow: var(--shadow-card);
+}
+
+.outfit-analysis-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+}
+
+.outfit-analysis-heading > div:first-child span {
+  color: var(--color-text-secondary);
+
+  font-size: 6px;
+  font-weight: 800;
+
+  letter-spacing: .8px;
+}
+
+.outfit-analysis-heading h2 {
+  margin-top: 4px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 18px;
+}
+
+.outfit-ai-badge {
+  padding: 6px 8px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 4px;
+
+  color: #9067bc;
+
+  background: #f5edfc;
+
+  border-radius: 999px;
+
+  font-size: 5px;
+  font-weight: 800;
+}
+
+.outfit-analysis-grid {
+  margin-top: 13px;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 7px;
+}
+
+.outfit-profile-box {
+  padding: 10px;
+
+  background: #fcf9fd;
+
+  border: 1px solid #eee8f0;
+
+  border-radius: 10px;
+}
+
+.outfit-profile-box span {
+  display: block;
+
+  color: var(--color-text-secondary);
+
+  font-size: 5px;
+  font-weight: 800;
+
+  letter-spacing: .6px;
+}
+
+.outfit-profile-box strong {
+  display: block;
+
+  margin-top: 4px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 11px;
+}
+
+
+/* SECTION */
+
+.outfit-section {
+  margin-top: 24px;
+}
+
+.outfit-section-heading {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+}
+
+.outfit-section-icon {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 11px;
+}
+
+.outfit-section-icon.palette {
+  color: #98703e;
+
+  background: #fbf3e7;
+}
+
+.outfit-section-icon.makeup {
+  color: #9a66b6;
+
+  background: #f5ecfa;
+}
+
+.outfit-section-heading span {
+  color: var(--color-text-secondary);
+
+  font-size: 6px;
+  font-weight: 800;
+
+  letter-spacing: .8px;
+}
+
+.outfit-section-heading h2 {
+  margin-top: 3px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 18px;
+}
+
+
+/* COLOURS */
+
+.outfit-colour-grid {
+  margin-top: 11px;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 8px;
+}
+
+.outfit-colour-card {
+  min-height: 78px;
+
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  background: white;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 15px;
+}
+
+.outfit-colour-circle {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  border: 4px solid white;
+
+  box-shadow:
+    0 2px 7px rgba(40, 30, 40, .12);
+}
+
+.outfit-colour-information {
+  flex: 1;
+}
+
+.outfit-colour-information strong {
+  font-family: 'Playfair Display', serif;
+
+  font-size: 11px;
+}
+
+.outfit-colour-information p {
+  margin-top: 3px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 6px;
+
+  line-height: 1.4;
+}
+
+.outfit-colour-check {
+  flex-shrink: 0;
+
+  color: #6b9b82;
+}
+
+
+/* MATCH CARD */
+
+.outfit-match-card {
+  margin-top: 16px;
+
+  padding: 14px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f0f8f4,
+      #f7f0fb
+    );
+
+  border: 1px solid #e7e5ea;
+
+  border-radius: 17px;
+}
+
+.outfit-match-icon {
+  width: 39px;
+  height: 39px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: #688d7b;
+
+  background: white;
+
+  border-radius: 11px;
+}
+
+.outfit-match-content {
+  flex: 1;
+}
+
+.outfit-match-content span {
+  color: #6f9381;
+
+  font-size: 5.5px;
+  font-weight: 800;
+
+  letter-spacing: .8px;
+}
+
+.outfit-match-content h3 {
+  margin-top: 3px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 13px;
+}
+
+.outfit-match-content p {
+  margin-top: 3px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 6.5px;
+
+  line-height: 1.5;
+}
+
+.outfit-match-score {
+  min-width: 45px;
+
+  text-align: center;
+}
+
+.outfit-match-score strong {
+  display: block;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 19px;
+
+  color: #6e967f;
+}
+
+.outfit-match-score span {
+  font-size: 5px;
+
+  font-weight: 800;
+
+  color: #779283;
+}
+
+
+/* MAKEUP LIST */
+
+.outfit-makeup-list {
+  margin-top: 11px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.outfit-makeup-card {
+  min-height: 70px;
+
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  background: white;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 15px;
+}
+
+.outfit-makeup-shade {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  border-radius: 12px;
+
+  border: 4px solid white;
+
+  box-shadow:
+    0 2px 7px rgba(40, 30, 40, .12);
+}
+
+.outfit-makeup-content {
+  flex: 1;
+}
+
+.outfit-makeup-content span {
+  color: var(--color-text-secondary);
+
+  font-size: 5.5px;
+  font-weight: 800;
+
+  letter-spacing: .7px;
+}
+
+.outfit-makeup-content h3 {
+  margin-top: 3px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 12px;
+}
+
+.outfit-makeup-content p {
+  margin-top: 3px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 6.5px;
+
+  line-height: 1.45;
+}
+
+.outfit-makeup-check {
+  color: #c27a9c;
+
+  flex-shrink: 0;
+}
+
+
+/* LIPSTICK */
+
+.lipstick-highlight {
+  margin-top: 16px;
+
+  padding: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+
+  background: white;
+
+  border: 1px solid #eadfe6;
+
+  border-radius: 17px;
+
+  box-shadow:
+    0 5px 18px rgba(80, 50, 70, .04);
+}
+
+.lipstick-highlight-left {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+}
+
+.lipstick-icon {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #b7688d;
+
+  background: #fff0f5;
+
+  border-radius: 11px;
+}
+
+.lipstick-highlight-left span {
+  color: #a07189;
+
+  font-size: 5.5px;
+  font-weight: 800;
+
+  letter-spacing: .8px;
+}
+
+.lipstick-highlight-left h3 {
+  margin-top: 3px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 13px;
+}
+
+.lipstick-highlight-left p {
+  margin-top: 3px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 6.5px;
+}
+
+.lipstick-shade {
+  text-align: center;
+}
+
+.lipstick-shade-circle {
+  width: 34px;
+  height: 34px;
+
+  margin: 0 auto;
+
+  border-radius: 50%;
+
+  border: 3px solid white;
+
+  box-shadow:
+    0 2px 7px rgba(40, 30, 40, .13);
+}
+
+.lipstick-shade span {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #9b929b;
+
+  font-size: 5px;
+}
+
+
+/* TIP */
+
+.outfit-ai-tip {
+  margin-top: 15px;
+
+  padding: 13px;
+
+  display: flex;
+  align-items: flex-start;
+
+  gap: 9px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff3f7,
+      #f5effc
+    );
+
+  border: 1px solid #eee1ef;
+
+  border-radius: 15px;
+}
+
+.outfit-ai-tip-icon {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: #9a6cb5;
+
+  background: #f3eafa;
+
+  border-radius: 10px;
+}
+
+.outfit-ai-tip span {
+  color: #99748e;
+
+  font-size: 5.5px;
+  font-weight: 800;
+
+  letter-spacing: .8px;
+}
+
+.outfit-ai-tip p {
+  margin-top: 4px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 6.5px;
+
+  line-height: 1.5;
+}
+
+
+/* CTA */
+
+.outfit-makeup-button {
+  width: 100%;
+
+  min-height: 54px;
+
+  margin-top: 17px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #c9789b,
+      #a574dd
+    );
+
+  border: none;
+
+  border-radius: 999px;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: .2s ease;
+}
+
+.outfit-makeup-button:hover {
+  transform: translateY(-2px);
+}
+
+.outfit-harmony-footer {
+  margin-top: 9px;
+
+  color: #aaa3ad;
+
+  text-align: center;
+
+  font-size: 6px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+  .outfit-harmony-container {
+    padding: 18px 18px 35px;
+  }
+
+  .outfit-harmony-hero h1 {
+    font-size: 33px;
+  }
+
+}
+
+@media (max-width: 450px) {
+
+  .outfit-analysis-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .outfit-colour-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .outfit-match-score {
+    display: none;
+  }
+
+}

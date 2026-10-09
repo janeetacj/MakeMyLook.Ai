@@ -1,0 +1,549 @@
+.recommendation-categories-page {
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 85% 0%,
+      rgba(190, 132, 255, 0.14),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 0% 55%,
+      rgba(255, 159, 190, 0.13),
+      transparent 32%
+    ),
+    #fff9fc;
+}
+
+.recommendation-categories-container {
+  width: 100%;
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  padding: 22px 24px 40px;
+}
+
+
+/* HEADER */
+
+.categories-header {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+}
+
+.categories-back {
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-text);
+
+  background: white;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 12px;
+}
+
+.categories-title-wrapper {
+  flex: 1;
+}
+
+.categories-title-wrapper span {
+  display: block;
+
+  color: var(--color-text-secondary);
+
+  font-size: 6px;
+  font-weight: 800;
+
+  letter-spacing: 0.9px;
+}
+
+.categories-title-wrapper strong {
+  display: block;
+
+  margin-top: 3px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 14px;
+}
+
+.categories-header-icon {
+  width: 37px;
+  height: 37px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-primary-dark);
+
+  background: #f5eafa;
+
+  border-radius: 11px;
+}
+
+
+/* HERO */
+
+.categories-hero {
+  margin-top: 29px;
+
+  text-align: center;
+}
+
+.categories-hero-icon {
+  width: 45px;
+  height: 45px;
+
+  margin: 0 auto 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  background: var(--gradient-primary);
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 10px 25px rgba(180,122,255,0.2);
+}
+
+.categories-hero > p:first-of-type {
+  color: var(--color-text-secondary);
+
+  font-size: 7px;
+  font-weight: 800;
+
+  letter-spacing: 1px;
+}
+
+.categories-hero h1 {
+  margin-top: 7px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 37px;
+
+  line-height: 1.03;
+}
+
+.categories-hero h1 span {
+  display: block;
+
+  background: var(--gradient-primary);
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+}
+
+.categories-hero-description {
+  max-width: 470px;
+
+  margin: 10px auto 0;
+
+  color: var(--color-text-secondary);
+
+  font-size: 8px;
+
+  line-height: 1.6;
+}
+
+
+/* PROFILE SUMMARY */
+
+.category-profile-summary {
+  margin-top: 20px;
+
+  padding: 12px 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: white;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 5px 18px rgba(90,60,100,0.04);
+}
+
+.summary-item {
+  flex: 1;
+
+  text-align: center;
+}
+
+.summary-item span {
+  display: block;
+
+  color: var(--color-text-secondary);
+
+  font-size: 6px;
+  font-weight: 800;
+
+  letter-spacing: 0.7px;
+}
+
+.summary-item strong {
+  display: block;
+
+  margin-top: 4px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 12px;
+}
+
+.summary-divider {
+  width: 1px;
+  height: 29px;
+
+  background: #ece5ed;
+}
+
+
+/* CATEGORY SECTION */
+
+.category-section {
+  margin-top: 25px;
+}
+
+.category-section-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+.category-section-heading > div > span {
+  color: var(--color-text-secondary);
+
+  font-size: 6px;
+  font-weight: 800;
+
+  letter-spacing: 0.8px;
+}
+
+.category-section-heading h2 {
+  margin-top: 4px;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 18px;
+}
+
+.category-count {
+  padding: 5px 8px;
+
+  color: var(--color-primary-dark);
+
+  background: #f5eafa;
+
+  border-radius: 999px;
+
+  font-size: 6px;
+  font-weight: 800;
+
+  white-space: nowrap;
+}
+
+
+/* CATEGORY CARDS */
+
+.category-list {
+  margin-top: 12px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 9px;
+}
+
+.category-card {
+  width: 100%;
+
+  min-height: 72px;
+
+  padding: 11px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  text-align: left;
+
+  background: white;
+
+  border: 1px solid var(--color-border);
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 5px 17px rgba(90,60,100,0.035);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-2px);
+
+  border-color: #ddc8e4;
+
+  box-shadow:
+    0 9px 24px rgba(90,60,100,0.08);
+}
+
+.category-card-icon {
+  width: 45px;
+  height: 45px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-primary-dark);
+
+  background: #f6edf9;
+
+  border-radius: 13px;
+}
+
+.category-card-content {
+  flex: 1;
+
+  min-width: 0;
+}
+
+.category-card-title-row {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+}
+
+.category-card-title-row h3 {
+  font-family: 'Playfair Display', serif;
+
+  font-size: 14px;
+}
+
+.category-card-title-row span {
+  padding: 3px 5px;
+
+  color: var(--color-primary-dark);
+
+  background: #f7eefb;
+
+  border-radius: 4px;
+
+  font-size: 5px;
+  font-weight: 800;
+
+  letter-spacing: 0.4px;
+}
+
+.category-card-content p {
+  margin-top: 4px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 7px;
+
+  line-height: 1.4;
+}
+
+.category-card-arrow {
+  width: 30px;
+  height: 30px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #a99eac;
+
+  background: #faf7fb;
+
+  border-radius: 9px;
+}
+
+
+/* CATEGORY VARIATIONS */
+
+.category-makeup .category-card-icon {
+  background: #fff0f5;
+  color: #b85c80;
+}
+
+.category-lip-colour .category-card-icon {
+  background: #fff0f1;
+  color: #b55d6e;
+}
+
+.category-hair .category-card-icon {
+  background: #f3edf9;
+  color: #805d9b;
+}
+
+.category-beard .category-card-icon,
+.category-mustache .category-card-icon {
+  background: #f1f1f1;
+  color: #5c5960;
+}
+
+.category-skincare .category-card-icon {
+  background: #eef8f4;
+  color: #55957a;
+}
+
+.category-lip-care .category-card-icon {
+  background: #fff1f5;
+  color: #b75d7b;
+}
+
+.category-nails .category-card-icon {
+  background: #f9eef8;
+  color: #a55e98;
+}
+
+.category-harmony .category-card-icon {
+  background: #f2edfc;
+  color: #7758a5;
+}
+
+
+/* AI NOTE */
+
+.categories-ai-note {
+  margin-top: 17px;
+
+  padding: 14px;
+
+  display: flex;
+
+  gap: 10px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fff6fa,
+      #f5edfd
+    );
+
+  border: 1px solid #ebdff0;
+
+  border-radius: 17px;
+}
+
+.ai-note-icon {
+  width: 33px;
+  height: 33px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  background: var(--gradient-primary);
+
+  border-radius: 10px;
+}
+
+.categories-ai-note span {
+  color: var(--color-text-secondary);
+
+  font-size: 6px;
+  font-weight: 800;
+
+  letter-spacing: 0.8px;
+}
+
+.categories-ai-note p {
+  margin-top: 5px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 7px;
+
+  line-height: 1.55;
+}
+
+
+/* FOOTER */
+
+.categories-footer {
+  margin-top: 10px;
+
+  color: #aaa3ad;
+
+  text-align: center;
+
+  font-size: 6px;
+
+  line-height: 1.5;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .recommendation-categories-container {
+    padding: 18px 18px 35px;
+  }
+
+  .categories-hero h1 {
+    font-size: 33px;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .category-profile-summary {
+    padding: 10px;
+  }
+
+  .summary-item strong {
+    font-size: 10px;
+  }
+
+  .category-card-title-row span {
+    display: none;
+  }
+
+  .category-card {
+    min-height: 68px;
+  }
+}

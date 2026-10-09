@@ -1,0 +1,838 @@
+.beard-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 10% 0%, rgba(255, 210, 228, 0.55), transparent 30%),
+    radial-gradient(circle at 90% 10%, rgba(218, 205, 255, 0.45), transparent 28%),
+    #fff9fc;
+  padding: 24px 16px 40px;
+  color: #3f3040;
+}
+
+.beard-container {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+/* HEADER */
+
+.beard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 34px;
+}
+
+.beard-back-button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(107, 78, 102, 0.12);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.82);
+  color: #5d465b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.beard-back-button:hover {
+  transform: translateX(-2px);
+  background: #ffffff;
+}
+
+.beard-header-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.beard-header-title span {
+  font-size: 8px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #a7899f;
+}
+
+.beard-header-title strong {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #4b3849;
+}
+
+.beard-header-sparkle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f8d7e5, #e8ddff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #765c73;
+}
+
+
+/* HERO */
+
+.beard-hero {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.beard-hero-icon {
+  width: 46px;
+  height: 46px;
+  margin: 0 auto 14px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #f5d5e3, #e6ddff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #72556d;
+}
+
+.beard-eyebrow {
+  margin: 0 0 8px;
+  font-size: 8px;
+  letter-spacing: 2.2px;
+  font-weight: 700;
+  color: #a3839b;
+}
+
+.beard-hero h1 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(34px, 7vw, 48px);
+  line-height: 1.05;
+  font-weight: 500;
+  color: #443241;
+}
+
+.beard-hero h1 span {
+  display: block;
+  color: #a87587;
+  font-style: italic;
+}
+
+.beard-hero-description {
+  max-width: 500px;
+  margin: 15px auto 0;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #8e788b;
+}
+
+
+/* PROFILE SUMMARY */
+
+.beard-profile-card {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  align-items: center;
+  padding: 18px 14px;
+  margin-bottom: 18px;
+  border: 1px solid rgba(163, 123, 151, 0.12);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 10px 30px rgba(107, 74, 100, 0.05);
+  backdrop-filter: blur(12px);
+}
+
+.beard-profile-item {
+  text-align: center;
+}
+
+.beard-profile-item span {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 7px;
+  letter-spacing: 1.4px;
+  font-weight: 700;
+  color: #a58e9e;
+}
+
+.beard-profile-item strong {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  color: #594455;
+}
+
+.beard-profile-divider {
+  width: 1px;
+  height: 28px;
+  background: rgba(117, 87, 110, 0.12);
+}
+
+
+/* STYLE SUMMARY */
+
+.beard-style-summary {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 18px;
+  margin-bottom: 34px;
+  border-radius: 22px;
+  background: linear-gradient(
+    135deg,
+    rgba(249, 226, 236, 0.72),
+    rgba(234, 226, 255, 0.72)
+  );
+  border: 1px solid rgba(160, 126, 158, 0.1);
+}
+
+.beard-style-summary-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9e6b7f;
+}
+
+.beard-style-summary > div:nth-child(2) {
+  flex: 1;
+}
+
+.beard-style-summary > div:nth-child(2) > span {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 7px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  color: #a48799;
+}
+
+.beard-style-summary h2 {
+  margin: 0 0 4px;
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #4c3948;
+}
+
+.beard-style-summary p {
+  margin: 0;
+  font-size: 10px;
+  line-height: 1.55;
+  color: #866f82;
+}
+
+.beard-match {
+  flex-shrink: 0;
+  width: 48px;
+  text-align: center;
+}
+
+.beard-match strong {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  line-height: 1;
+  color: #a4677d;
+}
+
+.beard-match span {
+  display: block;
+  margin-top: 4px;
+  font-size: 6px;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+  color: #a48799;
+}
+
+
+/* GROOMING DETAILS */
+
+.beard-details {
+  margin-bottom: 30px;
+  padding: 19px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(154, 119, 147, 0.11);
+  box-shadow: 0 10px 28px rgba(105, 76, 99, 0.045);
+}
+
+.beard-details-heading {
+  margin-bottom: 14px;
+}
+
+.beard-details-heading span {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 7px;
+  letter-spacing: 1.6px;
+  font-weight: 700;
+  color: #a28698;
+}
+
+.beard-details-heading h2 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #4b3849;
+}
+
+.beard-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 9px;
+}
+
+.beard-detail-item {
+  padding: 13px;
+  border-radius: 15px;
+  background: linear-gradient(
+    135deg,
+    rgba(250, 237, 243, 0.7),
+    rgba(241, 237, 252, 0.7)
+  );
+}
+
+.beard-detail-item span {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 7px;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+  color: #a08798;
+}
+
+.beard-detail-item strong {
+  display: block;
+  font-size: 10px;
+  font-weight: 600;
+  color: #5b4657;
+}
+
+
+/* RECOMMENDATIONS */
+
+.beard-section {
+  margin-bottom: 30px;
+}
+
+.beard-section-heading {
+  margin-bottom: 15px;
+}
+
+.beard-section-heading span {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 7px;
+  letter-spacing: 1.8px;
+  font-weight: 700;
+  color: #a48799;
+}
+
+.beard-section-heading h2 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #4a3747;
+}
+
+.beard-list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.beard-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 13px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(156, 120, 148, 0.11);
+  box-shadow: 0 8px 24px rgba(103, 71, 96, 0.045);
+  overflow: hidden;
+}
+
+.beard-card.featured {
+  border: 1px solid rgba(169, 108, 127, 0.25);
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 243, 248, 0.95),
+      rgba(248, 244, 255, 0.92)
+    );
+  box-shadow: 0 12px 30px rgba(145, 96, 119, 0.08);
+}
+
+.beard-style-visual {
+  position: relative;
+  flex-shrink: 0;
+  width: 64px;
+  height: 76px;
+  border-radius: 16px;
+  background:
+    radial-gradient(
+      circle at 50% 35%,
+      rgba(255, 255, 255, 0.9),
+      rgba(235, 221, 229, 0.9)
+    );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9d7183;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.6),
+    0 5px 15px rgba(76, 52, 68, 0.08);
+}
+
+.beard-style-visual svg {
+  opacity: 0.8;
+}
+
+.beard-style-visual span {
+  position: absolute;
+  bottom: 7px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 6px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #9d7f8e;
+}
+
+.beard-card-content {
+  min-width: 0;
+  flex: 1;
+}
+
+.beard-card-category {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 7px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  color: #a17d91;
+}
+
+.beard-card-content h3 {
+  margin: 0 0 3px;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #493646;
+}
+
+.beard-card-content strong {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 9px;
+  font-weight: 600;
+  color: #a36b7e;
+}
+
+.beard-card-content p {
+  margin: 0;
+  max-width: 490px;
+  font-size: 9px;
+  line-height: 1.55;
+  color: #8a7485;
+}
+
+.beard-card-check {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #efd9e1;
+  color: #956078;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* DIRECTION */
+
+.beard-direction {
+  margin-bottom: 25px;
+  padding: 19px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(154, 119, 147, 0.11);
+  box-shadow: 0 10px 28px rgba(105, 76, 99, 0.045);
+}
+
+.beard-direction-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.beard-direction-heading span {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 7px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  color: #a28698;
+}
+
+.beard-direction-heading h2 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 21px;
+  font-weight: 600;
+  color: #4b3849;
+}
+
+.beard-direction-heading svg {
+  color: #a36f82;
+}
+
+.beard-direction-points {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.beard-direction-points div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 9px;
+  color: #806b7a;
+}
+
+.beard-direction-points svg {
+  flex-shrink: 0;
+  fill: #c18ca0;
+  color: #c18ca0;
+}
+
+
+/* TOP PICK */
+
+.beard-top-pick-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 22px;
+  background: linear-gradient(
+    135deg,
+    rgba(249, 227, 236, 0.72),
+    rgba(237, 229, 255, 0.72)
+  );
+  border: 1px solid rgba(164, 125, 160, 0.11);
+}
+
+.beard-top-pick-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.beard-top-pick-icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a36f82;
+}
+
+.beard-top-pick-left > div:last-child > span {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 7px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  color: #a48698;
+}
+
+.beard-top-pick-left h3 {
+  margin: 0 0 3px;
+  font-family: "Playfair Display", serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #4c3948;
+}
+
+.beard-top-pick-left p {
+  margin: 0;
+  font-size: 9px;
+  color: #876f81;
+}
+
+.beard-top-pick-score {
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.beard-top-pick-score strong {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-size: 23px;
+  line-height: 1;
+  color: #9f657a;
+}
+
+.beard-top-pick-score span {
+  display: block;
+  margin-top: 4px;
+  font-size: 6px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #a48799;
+}
+
+
+/* TIP */
+
+.beard-tip {
+  display: flex;
+  gap: 11px;
+  padding: 16px;
+  margin-bottom: 18px;
+  border-radius: 19px;
+  background: rgba(255, 248, 236, 0.75);
+  border: 1px solid rgba(206, 177, 135, 0.12);
+}
+
+.beard-tip-icon {
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b28a58;
+}
+
+.beard-tip span {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 7px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  color: #a68a6a;
+}
+
+.beard-tip p {
+  margin: 0;
+  font-size: 9px;
+  line-height: 1.6;
+  color: #8a7562;
+}
+
+
+/* CTA */
+
+.beard-complete-button {
+  width: 100%;
+  min-height: 52px;
+  border: none;
+  border-radius: 17px;
+  background: linear-gradient(135deg, #b9788d, #9f83c9);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  box-shadow: 0 12px 25px rgba(155, 107, 135, 0.2);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.beard-complete-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(155, 107, 135, 0.25);
+}
+
+.beard-complete-button:active {
+  transform: translateY(0);
+}
+
+
+/* FOOTER */
+
+.beard-footer {
+  margin: 18px 0 0;
+  text-align: center;
+  font-size: 7px;
+  letter-spacing: 0.8px;
+  color: #b09eac;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 560px) {
+  .beard-page {
+    padding: 18px 12px 30px;
+  }
+
+  .beard-header {
+    margin-bottom: 28px;
+  }
+
+  .beard-header-title strong {
+    font-size: 16px;
+  }
+
+  .beard-hero h1 {
+    font-size: 34px;
+  }
+
+  .beard-hero-description {
+    padding: 0 8px;
+  }
+
+  .beard-profile-card {
+    padding: 15px 8px;
+  }
+
+  .beard-profile-item strong {
+    font-size: 10px;
+  }
+
+  .beard-style-summary {
+    padding: 15px;
+  }
+
+  .beard-style-summary h2 {
+    font-size: 18px;
+  }
+
+  .beard-style-summary p {
+    font-size: 9px;
+  }
+
+  .beard-match {
+    width: 42px;
+  }
+
+  .beard-match strong {
+    font-size: 21px;
+  }
+
+  .beard-details {
+    padding: 15px;
+  }
+
+  .beard-card {
+    align-items: flex-start;
+  }
+
+  .beard-style-visual {
+    width: 55px;
+    height: 68px;
+  }
+
+  .beard-card-content h3 {
+    font-size: 16px;
+  }
+
+  .beard-card-content p {
+    font-size: 8.5px;
+  }
+
+  .beard-card-check {
+    width: 22px;
+    height: 22px;
+  }
+
+  .beard-top-pick-card {
+    padding: 15px;
+  }
+
+  .beard-top-pick-left {
+    gap: 9px;
+  }
+
+  .beard-top-pick-left h3 {
+    font-size: 15px;
+  }
+
+  .beard-top-pick-left p {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 380px) {
+  .beard-profile-card {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .beard-profile-divider {
+    width: 70%;
+    height: 1px;
+    margin: 0 auto;
+  }
+
+  .beard-style-summary {
+    align-items: flex-start;
+  }
+
+  .beard-match {
+    margin-left: auto;
+  }
+
+  .beard-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .beard-card {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .beard-style-visual {
+    width: 48px;
+    height: 62px;
+  }
+
+  .beard-card-content h3 {
+    font-size: 15px;
+  }
+
+  .beard-card-content strong {
+    font-size: 8px;
+  }
+
+  .beard-card-content p {
+    font-size: 8px;
+  }
+
+  .beard-top-pick-card {
+    align-items: flex-start;
+  }
+
+  .beard-top-pick-score strong {
+    font-size: 20px;
+  }
+}
